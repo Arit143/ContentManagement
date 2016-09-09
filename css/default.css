@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "SignikaNegative";
+    font-style: bold;
+    font-weight: normal;
+    src: url("/fonts/SignikaNegative-Bold.ttf") format("truetype");
+    letter-spacing:.6em;
+}
+
+body{
+	background-image: url("/img/backgroundImage_2.png");
+	font-family: 'SignikaNegative' !important;
+}

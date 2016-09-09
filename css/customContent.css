@@ -1,0 +1,206 @@
+.centerContainer{
+  margin: auto;
+  width: 100%;
+}
+
+.mainContainer{
+  margin: auto;
+  width: 70%;
+  margin-top: 20px;
+ }
+
+.effects {
+  padding-left: 15px;
+}
+.effects .imgClass {
+  position: relative;
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.effects .imgClass:nth-child(n) {
+  margin-right: 5px;
+}
+.effects .imgClass:first-child {
+  margin-left: -15px;
+}
+.effects .imgClass:last-child {
+  margin-right: 0;
+}
+.effects .imgClass img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.closeOverlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+
+a.closeOverlay.hidden {
+  display: none;
+}
+
+a.expand {
+    z-index: 100;
+    color: #fff;
+    line-height: 200px;
+    font-size: 25px;
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+.bottomSlideEffect .overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+.bottomSlideEffect .overlay a.expand {
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -30px auto;
+}
+.bottomSlideEffect .imgClass.hover .overlay {
+  height: 100%;
+}
+
+ .OverlayClass {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(25, 24, 24, 0.74902);
+     z-index: 300;
+ }
+
+ .ModalClass {
+    position                   : absolute;
+    top                        : 10%;
+    left                       : 30%;
+    right                      : 30%;
+    bottom                     : 10%;
+    border                     : 1px solid #ccc;
+    background                 : #fff;
+    overflow                   : auto;
+    border-radius:             : 4px;
+    outline                    : none;
+    padding                    : 20px;
+}
+
+.topPadding {
+  padding-top: 20px;
+}
+
+.icon{
+  background:url('https://s-passets-cache-ak0.pinimg.com/webapp/style/sprites/webapp-common-above_the_fold-1x-62d3e029.png') -212px -205px no-repeat;
+  height: 29px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top:6px;
+}
+
+.headerParagraphStyle {
+  padding-bottom:6px;
+  position:fixed;
+  top:0;
+  z-index:200;
+  background:white;
+}
+
+.ellipsisStyle {
+  width : 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerStyle{
+  display:inline-block;
+  color: #DC3D24;
+}
+
+.paragraphStyle {
+  width : 80%;
+  color: #4EB1BA;
+}
+
+.wrapperContainerStyle {
+  clear: both;
+  margin-top:150px;
+  min-height:600px;
+}
+
+.imageTextStyle{
+  display: inline-block;
+  color : #FFFFFF;
+}
+
+@media only screen and (min-width: 1200px ){
+  a.expand {
+    padding-right: 20px
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px){
+  .headerParagraphStyle{
+    padding-bottom: 0px;
+  }
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+  .headerParagraphStyle{
+    padding-bottom: 0px;
+  }
+
+  .paragraphStyle{
+    width : 100%;
+  }
+
+  .wrapperContainerStyle{
+    margin-top:260px;
+  }
+
+  .ModalClass{
+    left : 0%;
+    right : 0%;
+  }
+
+}
